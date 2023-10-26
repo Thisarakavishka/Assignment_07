@@ -1,7 +1,12 @@
+#home-section,
 #customer-section,
 #item-section{
     max-width: 900px;
     padding: 20px;
+}
+
+#order-section{
+    padding-top: 20px;
 }
 
 .input-card {
