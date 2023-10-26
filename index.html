@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Point Of Sale</title>
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <ul class="nav nav-underline align-content-lg-start">
+                <a class="navbar-brand" href="#">
+                    <!-- need to add logo for POS system -->
+                    WEBSITE LOGO
+                </a>
+                <li class="nav-item">
+                    <a id="home" class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a id="order" class="nav-link" href="#">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a id="item" class="nav-link" href="#">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a id="customer" class="nav-link" href="#">Customers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section id="customer-section" class="container">
+    <div class="content row">
+        <div class="order-form col col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="input-card">
+                <div class=" input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Customer..." id="searchBar">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </div>
+                <hr>
+                <div>
+                    <label for="customerId" class="form-label">Customer Id</label>
+                    <input type="number" class="form-control" id="customerId">
+                </div>
+                <div>
+                    <label for="customerName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="customerName">
+                </div>
+                <div>
+                    <label for="customerAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="customerAddress">
+                </div>
+                <div>
+                    <label for="salary" class="form-label">Salary</label>
+                    <input type="number" class="form-control" id="salary">
+                </div>
+                <div class="mt-5">
+                    <button type="submit" class="btn btn-success" id="order_submit">Submit</button>
+                    <button type="button" class="btn btn-primary" id="customer_update">Update</button>
+                    <button type="button" class="btn btn-danger" id="customer_delete">Delete</button>
+                    <button type="reset" class="btn btn-warning">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-card col col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-end">
+            <table class="table table-striped text-center ">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary</th>
+                </tr>
+                </thead>
+                <tbody id="order-tbl-body">
+                <tr>
+                    <td>0001</td>
+                    <td>Thisara</td>
+                    <td>Moratuwa</td>
+                    <td>650000</td>
+                </tr>
+                <tr>
+                    <td>0002</td>
+                    <td>ushan</td>
+                    <td>Moratuwa</td>
+                    <td>650000</td>
+                </tr>
+                <tr>
+                    <td>0003</td>
+                    <td>kashmira</td>
+                    <td>Moratuwa</td>
+                    <td>650000</td>
+                </tr>
+                <tr>
+                    <td>0004</td>
+                    <td>perera</td>
+                    <td>Moratuwa</td>
+                    <td>650000</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
