@@ -1,4 +1,5 @@
-#customer-section{
+#customer-section,
+#item-section{
     max-width: 900px;
     padding: 20px;
 }

@@ -33,12 +33,88 @@
     </nav>
 </header>
 
+<section id="item-section" class="container">
+    <div class="content row">
+        <div class="order-form col col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="input-card">
+                <div class=" input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Item..." id="itemSearch">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </div>
+                <hr>
+                <div>
+                    <label for="itemCode" class="form-label">Item Code</label>
+                    <input type="number" class="form-control" id="itemCode">
+                </div>
+                <div>
+                    <label for="itemName" class="form-label">Item Name</label>
+                    <input type="text" class="form-control" id="itemName">
+                </div>
+                <div>
+                    <label for="itemPrice" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="itemPrice">
+                </div>
+                <div>
+                    <label for="itemQty" class="form-label">Qty</label>
+                    <input type="number" class="form-control" id="itemQty">
+                </div>
+                <div class="mt-5">
+                    <button type="submit" class="btn btn-success" id="item_submit">Submit</button>
+                    <button type="button" class="btn btn-primary" id="item_update">Update</button>
+                    <button type="button" class="btn btn-danger" id="item_delete">Delete</button>
+                    <button type="reset" class="btn btn-warning">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-card col col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-end">
+            <table class="table table-striped text-center ">
+                <thead>
+                <tr>
+                    <th scope="col">Code</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                </tr>
+                </thead>
+                <tbody id="item-tbl-body">
+                <tr>
+                    <td>0001</td>
+                    <td>ari pods</td>
+                    <td>120000</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>ari pods</td>
+                    <td>120000</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>ari pods</td>
+                    <td>120000</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>ari pods</td>
+                    <td>120000</td>
+                    <td>30</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
 <section id="customer-section" class="container">
     <div class="content row">
         <div class="order-form col col-lg-6 col-md-12 col-sm-12 col-12">
             <div class="input-card">
                 <div class=" input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Customer..." id="searchBar">
+                    <input type="text" class="form-control" placeholder="Customer..." id="CustomersSearch">
                     <button class="btn btn-primary" type="button">Search</button>
                 </div>
                 <hr>
